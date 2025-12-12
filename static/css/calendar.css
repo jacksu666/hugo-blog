@@ -68,15 +68,37 @@
 }
 
 /* Heatmap intensity levels */
-.heatmap-day.level-1 { background: #9be9a8; }
-.heatmap-day.level-2 { background: #40c463; }
-.heatmap-day.level-3 { background: #30a14e; }
-.heatmap-day.level-4 { background: #216e39; }
+.heatmap-day.level-1 {
+  background: #9be9a8;
+}
 
-.dark .heatmap-day.level-1 { background: #0e4429; }
-.dark .heatmap-day.level-2 { background: #006d32; }
-.dark .heatmap-day.level-3 { background: #26a641; }
-.dark .heatmap-day.level-4 { background: #39d353; }
+.heatmap-day.level-2 {
+  background: #40c463;
+}
+
+.heatmap-day.level-3 {
+  background: #30a14e;
+}
+
+.heatmap-day.level-4 {
+  background: #216e39;
+}
+
+.dark .heatmap-day.level-1 {
+  background: #0e4429;
+}
+
+.dark .heatmap-day.level-2 {
+  background: #006d32;
+}
+
+.dark .heatmap-day.level-3 {
+  background: #26a641;
+}
+
+.dark .heatmap-day.level-4 {
+  background: #39d353;
+}
 
 /* Heatmap Legend */
 .heatmap-legend {
@@ -318,4 +340,84 @@
 
 .dark .stat-label {
   color: #999;
+}
+
+/* ===== Mobile Responsive ===== */
+@media (max-width: 768px) {
+  .calendar-section h2 {
+    font-size: 1.25rem;
+  }
+
+  /* Heatmap mobile */
+  .heatmap-wrapper {
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .heatmap-day {
+    width: 10px;
+    height: 10px;
+  }
+
+  .heatmap-legend {
+    font-size: 0.7rem;
+    flex-wrap: wrap;
+  }
+
+  /* Monthly calendar mobile */
+  .monthly-calendar {
+    padding: 1rem;
+    max-width: 100%;
+  }
+
+  .calendar-title {
+    font-size: 1rem;
+  }
+
+  .day {
+    font-size: 0.8rem;
+  }
+
+  .weekday {
+    font-size: 0.65rem;
+  }
+
+  /* Stats mobile */
+  .calendar-stats {
+    gap: 1rem;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .stat-value {
+    font-size: 1.25rem;
+  }
+
+  .stat-label {
+    font-size: 0.7rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .heatmap-day {
+    width: 8px;
+    height: 8px;
+    gap: 2px;
+  }
+
+  .heatmap-month-label {
+    font-size: 0.6rem;
+  }
+
+  .monthly-calendar {
+    padding: 0.75rem;
+  }
+
+  .calendar-nav {
+    padding: 0.25rem;
+    font-size: 1rem;
+  }
+
+  .day {
+    font-size: 0.75rem;
+  }
 }
