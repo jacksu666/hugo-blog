@@ -23,9 +23,9 @@ theme = 'paper'
   bio = 'Sharing thoughts and code.'
 
   # Social icons
-  github = 'github'    # Your GitHub username
-  twitter = 'twitter'  # Your Twitter username
-  rss = true           # 显示 RSS 图标
+  github = 'jacksu666'   # Your GitHub username
+  # twitter = ''         # Your Twitter username (uncomment if needed)
+  rss = true             # 显示 RSS 图标
 
   # 数学公式支持
   math = true          # 全局启用 KaTeX
