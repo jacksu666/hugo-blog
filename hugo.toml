@@ -30,6 +30,21 @@ theme = 'paper'
   # 数学公式支持
   math = true          # 全局启用 KaTeX
 
+# Giscus 评论系统
+[params.giscus]
+  repo = "jacksu666/hugo-blog"
+  repoId = "R_kgDOQnbK7g"
+  category = "Announcements"
+  categoryId = "DIC_kwDOQnbK7s4Czsu7"
+  mapping = "pathname"
+  strict = "0"
+  reactionsEnabled = "1"
+  emitMetadata = "0"
+  inputPosition = "bottom"
+  theme = "preferred_color_scheme"
+  lang = "zh-CN"
+  loading = "lazy"
+
 [markup]
   [markup.goldmark]
     [markup.goldmark.renderer]
